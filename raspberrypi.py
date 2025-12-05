@@ -8,18 +8,13 @@ import csv
 import psutil as ps
 import os
 
-
 current_latitude = "N/A"
 current_longitude = "N/A"
 current_moisture = "N/A"
 sample_ID = 0
 
-
 serMoisture = None
 serGps = None
-
-
-
 
 def communicate_to_actuator(command):
     global serMoisture
@@ -83,34 +78,18 @@ def update_gps_reading():
             print(f"GPS read error: {e}")
 
 
-
-
 def read_sensor():
     return current_moisture
-
-
-
-
 def read_latitude():
     return current_latitude
-
-
-
-
 def read_longitude():
     return current_longitude
-
-
-
-
 def log_data():
     filename = "data.csv"
-
 
     moisture = read_sensor()
     latitude = read_latitude()
     longitude = read_longitude()
-
 
     if latitude != "N/A" and moisture != "N/A" and type(moisture) is float:
         with open(filename, 'a') as file:
