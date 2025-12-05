@@ -1,6 +1,4 @@
 # Coded by Nathan
-
-
 import serial
 import pynmea2
 import time

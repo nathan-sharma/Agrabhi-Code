@@ -1,3 +1,5 @@
+//coded by Nathan 
+
 #include <Servo.h> 
 
 Servo actuator; 
