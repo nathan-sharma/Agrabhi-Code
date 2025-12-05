@@ -1,4 +1,6 @@
 #coded by Nathan
+#multi-regression calculator, does linear, quadratic, cubic, logarithmic, and exponential regressions 
+
 import numpy as np 
 import matplotlib.pyplot as plt 
 from scipy.optimize import curve_fit
@@ -218,3 +220,4 @@ y_predicted_exp = exponential_model(x)
 residuals_exp = y - y_predicted_exp
 
 spatial_residuals_exp = np.column_stack((latitudes, longitudes, residuals_exp))
+
