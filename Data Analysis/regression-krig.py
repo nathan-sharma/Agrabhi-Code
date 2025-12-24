@@ -1,3 +1,4 @@
+#for diff model edit all fields marked with change
 import numpy as np 
 import matplotlib.pyplot as plt
 from scipy.spatial.distance import cdist 
@@ -84,4 +85,5 @@ plt.ylabel('Latitude')
 plt.legend()
 plt.grid(True)
 plt.show()
+
 
