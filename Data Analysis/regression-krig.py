@@ -5,7 +5,7 @@ from pykrige.ok import OrdinaryKriging
 import regression 
 from regression import spatial_residuals_linear, spatial_residuals_quadratic, spatial_residuals_cubic, spatial_residuals_log, spatial_residuals_exp, coefficients_linear, coefficients_quadratic, coefficients_cubic, x, y, a_log, b_log, a_exp, b_exp, measured_data
 data = spatial_residuals_linear #change
-lat, lon, z = data[:, 0], data[:, 1], data[:, 2] # Extract Y, X, and Residual (Z)
+lat, lon, z = data[:, 0], data[:, 1], data[:, 2] # Y, X, and Residual (Z)
 elevation = measured_data[:, 2]
 n = len(z)
 num_points = 200
@@ -84,3 +84,4 @@ plt.ylabel('Latitude')
 plt.legend()
 plt.grid(True)
 plt.show()
+
