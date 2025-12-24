@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt 
 from scipy.optimize import curve_fit
 measured_data = np.array([
-
+#Lat, lon, elevation, moisture
     [29.77, -95.68, 30.0, 15.2], [29.77, -95.67, 30.0, 20.5], [29.77, -95.66, 30.0, 25.8],
     [29.76, -95.68, 25.0, 45.1], [29.76, -95.67, 25.0, 50.4], [29.76, -95.66, 25.0, 55.7],
     [29.75, -95.68, 20.0, 80.3], [29.75, -95.67, 20.0, 85.6], [29.75, -95.66, 20.0, 92.1]
@@ -143,4 +143,5 @@ spatial_residuals_log = np.column_stack((latitudes, longitudes, residuals_log))
 y_predicted_exp = exponential_model(x) 
 residuals_exp = y - y_predicted_exp
 spatial_residuals_exp = np.column_stack((latitudes, longitudes, residuals_exp))
+
 
